@@ -57,10 +57,10 @@ int PackedFrameSize[2] = {
 	20
 };
 
-int UseHp = True;
-int UsePf = True;
+int UseHp = False;
+int UsePf = False;
 int UseVx = False;
-int UsePr = True;
+int UsePr = False;
 
 void g723_i(int rate, int dtx)
 {
