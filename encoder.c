@@ -16,11 +16,11 @@ int main(int argc, char *argv[]) {
 	if (mode == 0) {
 		BYTES_PER_FRAME = 20;
 		g723_i(1, 0);
-		printf("using 5.33333 kbps ACELP\n");
+		printf("using 5.33333 kbps ACELP\n\n");
 	} else {
 		BYTES_PER_FRAME = 24;
 		g723_i(0, 0);
-		printf("using 6.4 kbps MPC-MLQ\n");
+		printf("using 6.4 kbps MPC-MLQ\n\n");
 	};
 
 	short inbuf[SAMPLES_PER_FRAME];
@@ -37,5 +37,6 @@ int main(int argc, char *argv[]) {
 		fwrite(encbuf, BYTES_PER_FRAME, 1, fout);
 		i++;
 	}
+	printf("\n\nencoding complete.\n");
 	return 0;
 }
