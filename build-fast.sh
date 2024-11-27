@@ -1,3 +1,3 @@
 #!/bin/sh
-gcc -Icodec/ -Ofast encoder.c codec/*.c -o encoder
-gcc -Icodec/ -Ofast decoder.c codec/*.c -o decoder
+gcc -Icodec/ -O3 encoder.c codec/*.c -o encoder
+gcc -Icodec/ -O3 decoder.c codec/*.c -o decoder
